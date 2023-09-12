@@ -1,0 +1,86 @@
+Name: Alarms
+Id: g=3293e7cd8de0bb06cc725e017a984470
+Type: AlarmsCategoryFolder
+Children:
+- Name: DigitalAlarm1
+  Id: g=39483ced18d0c44258904cb4364b2384
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=c65f7f55037089fcb90986c2eef67b3a
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Id: g=cfb3dddf9012c01e43c75c73da44c835
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=c892221c1ae235bb1b4ee6dbdbb0c58d
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Variable1"
+      Children:
+      - Name: Mode
+        Id: g=4eabd3c28a614e03ffcf4d43653eca3c
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=e5e76d8aa3bb663ca9de187c59a30a5d
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=11;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=83
+    Direction: Forward
+- Name: DigitalAlarm2
+  Id: g=08a69df576feef63935a970d5c179f11
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=dee1fcd0339e17aa4361b7aa221c6bad
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Id: g=d645b214a98db97227ef3fca0a9f1d44
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=8a763ae837cda0fc9bd0c842d2151055
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Variable2"
+      Children:
+      - Name: Mode
+        Id: g=a9301ecea049acdc4481d241ce2e9b75
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=e39cbeb648165693898e58d6d7cb47ad
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=11;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=83
+    Direction: Forward
